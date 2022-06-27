@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Interactive UMAP Projection</title>
+	<style type="text/css">
+		a:hover img {
+			transform: scale(1.2, 1.2);
+		}
+	</style>
+	<script type="text/javascript">
+		function play(wavid) {
+			var audio = document.getElementById(wavid);
+			if (audio.paused) {
+				audio.play();
+			}
+			else {
+				audio.pause();
+				audio.currentTime = 0;
+			}
+		}
+	</script>
+</head>
+<body>
+	<!-- The following part is trying to put figures and audio files -->
+	<div id="interactive_umap_audio">
+		<img src="fig/plane.png" alt="UMAP projection plane" style="position:absolute; left:0px; top:0px; z-index:1;">
+		
+<audio id="2189_p_m_52_1978_a_n" src="wav/2189_p_m_52_1978_a_n.wav" type="audio/wav"></audio>
+<a><img src="fig/p_m.png" width="16" height="26" onclick="play('2189_p_m_52_1978_a_n')" alt="audio of 2189_p_m_52_1978_a_n" style="position:absolute; left:513px; top:442px; z-index:2;"></a>
+<audio id="975_n_w_19_1369_a_n" src="wav/975_n_w_19_1369_a_n.wav" type="audio/wav"></audio>
+<a><img src="fig/n_w.png" width="16" height="16" onclick="play('975_n_w_19_1369_a_n')" alt="audio of 975_n_w_19_1369_a_n" style="position:absolute; left:207px; top:402px; z-index:3;"></a>
+<audio id="1635_p_w_33_1263_a_n" src="wav/1635_p_w_33_1263_a_n.wav" type="audio/wav"></audio>
+<a><img src="fig/p_w.png" width="16" height="16" onclick="play('1635_p_w_33_1263_a_n')" alt="audio of 1635_p_w_33_1263_a_n" style="position:absolute; left:482px; top:298px; z-index:4;"></a>
+<audio id="936_p_w_20_1471_a_n" src="wav/936_p_w_20_1471_a_n.wav" type="audio/wav"></audio>
+<a><img src="fig/p_w.png" width="16" height="16" onclick="play('936_p_w_20_1471_a_n')" alt="audio of 936_p_w_20_1471_a_n" style="position:absolute; left:160px; top:347px; z-index:5;"></a>
+<audio id="2336_p_w_63_2533_a_n" src="wav/2336_p_w_63_2533_a_n.wav" type="audio/wav"></audio>
+<a><img src="fig/p_w.png" width="16" height="16" onclick="play('2336_p_w_63_2533_a_n')" alt="audio of 2336_p_w_63_2533_a_n" style="position:absolute; left:510px; top:303px; z-index:6;"></a>
+<audio id="2600_p_w_45_2466_a_n" src="wav/2600_p_w_45_2466_a_n.wav" type="audio/wav"></audio>
+<a><img src="fig/p_w.png" width="16" height="16" onclick="play('2600_p_w_45_2466_a_n')" alt="audio of 2600_p_w_45_2466_a_n" style="position:absolute; left:408px; top:283px; z-index:7;"></a>
+<audio id="614_n_w_20_686_a_n" src="wav/614_n_w_20_686_a_n.wav" type="audio/wav"></audio>
+<a><img src="fig/n_w.png" width="16" height="16" onclick="play('614_n_w_20_686_a_n')" alt="audio of 614_n_w_20_686_a_n" style="position:absolute; left:214px; top:415px; z-index:8;"></a>
+<audio id="820_n_m_40_1017_a_n" src="wav/820_n_m_40_1017_a_n.wav" type="audio/wav"></audio>
+<a><img src="fig/n_m.png" width="16" height="26" onclick="play('820_n_m_40_1017_a_n')" alt="audio of 820_n_m_40_1017_a_n" style="position:absolute; left:531px; top:491px; z-index:9;"></a>
+<audio id="1591_p_m_59_1195_a_n" src="wav/1591_p_m_59_1195_a_n.wav" type="audio/wav"></audio>
+<a><img src="fig/p_m.png" width="16" height="26" onclick="play('1591_p_m_59_1195_a_n')" alt="audio of 1591_p_m_59_1195_a_n" style="position:absolute; left:581px; top:450px; z-index:10;"></a>
+<audio id="1479_p_w_53_885_a_n" src="wav/1479_p_w_53_885_a_n.wav" type="audio/wav"></audio>
+<a><img src="fig/p_w.png" width="16" height="16" onclick="play('1479_p_w_53_885_a_n')" alt="audio of 1479_p_w_53_885_a_n" style="position:absolute; left:420px; top:399px; z-index:11;"></a>
+<audio id="1594_p_m_69_1197_a_n" src="wav/1594_p_m_69_1197_a_n.wav" type="audio/wav"></audio>
+<a><img src="fig/p_m.png" width="16" height="26" onclick="play('1594_p_m_69_1197_a_n')" alt="audio of 1594_p_m_69_1197_a_n" style="position:absolute; left:378px; top:447px; z-index:12;"></a>
+<audio id="2524_p_m_72_2390_a_n" src="wav/2524_p_m_72_2390_a_n.wav" type="audio/wav"></audio>
+<a><img src="fig/p_m.png" width="16" height="26" onclick="play('2524_p_m_72_2390_a_n')" alt="audio of 2524_p_m_72_2390_a_n" style="position:absolute; left:552px; top:273px; z-index:13;"></a>
+<audio id="2220_p_w_49_2012_a_n" src="wav/2220_p_w_49_2012_a_n.wav" type="audio/wav"></audio>
+<a><img src="fig/p_w.png" width="16" height="16" onclick="play('2220_p_w_49_2012_a_n')" alt="audio of 2220_p_w_49_2012_a_n" style="position:absolute; left:543px; top:410px; z-index:14;"></a>
+<audio id="1932_p_m_56_1638_a_n" src="wav/1932_p_m_56_1638_a_n.wav" type="audio/wav"></audio>
+<a><img src="fig/p_m.png" width="16" height="26" onclick="play('1932_p_m_56_1638_a_n')" alt="audio of 1932_p_m_56_1638_a_n" style="position:absolute; left:597px; top:283px; z-index:15;"></a>
+<audio id="24_n_w_26_23_a_n" src="wav/24_n_w_26_23_a_n.wav" type="audio/wav"></audio>
+<a><img src="fig/n_w.png" width="16" height="16" onclick="play('24_n_w_26_23_a_n')" alt="audio of 24_n_w_26_23_a_n" style="position:absolute; left:195px; top:399px; z-index:16;"></a>
+<audio id="1043_n_m_22_1702_a_n" src="wav/1043_n_m_22_1702_a_n.wav" type="audio/wav"></audio>
+<a><img src="fig/n_m.png" width="16" height="26" onclick="play('1043_n_m_22_1702_a_n')" alt="audio of 1043_n_m_22_1702_a_n" style="position:absolute; left:527px; top:402px; z-index:17;"></a>
+<audio id="1998_p_m_48_1720_a_n" src="wav/1998_p_m_48_1720_a_n.wav" type="audio/wav"></audio>
+<a><img src="fig/p_m.png" width="16" height="26" onclick="play('1998_p_m_48_1720_a_n')" alt="audio of 1998_p_m_48_1720_a_n" style="position:absolute; left:543px; top:245px; z-index:18;"></a>
+<audio id="2069_p_w_71_1803_a_n" src="wav/2069_p_w_71_1803_a_n.wav" type="audio/wav"></audio>
+<a><img src="fig/p_w.png" width="16" height="16" onclick="play('2069_p_w_71_1803_a_n')" alt="audio of 2069_p_w_71_1803_a_n" style="position:absolute; left:482px; top:338px; z-index:19;"></a>
+<audio id="108_n_m_68_92_a_n" src="wav/108_n_m_68_92_a_n.wav" type="audio/wav"></audio>
+<a><img src="fig/n_m.png" width="16" height="26" onclick="play('108_n_m_68_92_a_n')" alt="audio of 108_n_m_68_92_a_n" style="position:absolute; left:387px; top:449px; z-index:20;"></a>
+<audio id="56_n_w_22_56_a_n" src="wav/56_n_w_22_56_a_n.wav" type="audio/wav"></audio>
+<a><img src="fig/n_w.png" width="16" height="16" onclick="play('56_n_w_22_56_a_n')" alt="audio of 56_n_w_22_56_a_n" style="position:absolute; left:219px; top:257px; z-index:21;"></a>
+<audio id="1367_p_w_43_496_a_n" src="wav/1367_p_w_43_496_a_n.wav" type="audio/wav"></audio>
+<a><img src="fig/p_w.png" width="16" height="16" onclick="play('1367_p_w_43_496_a_n')" alt="audio of 1367_p_w_43_496_a_n" style="position:absolute; left:574px; top:364px; z-index:22;"></a>
+<audio id="112_n_m_69_96_a_n" src="wav/112_n_m_69_96_a_n.wav" type="audio/wav"></audio>
+<a><img src="fig/n_m.png" width="16" height="26" onclick="play('112_n_m_69_96_a_n')" alt="audio of 112_n_m_69_96_a_n" style="position:absolute; left:537px; top:479px; z-index:23;"></a>
+<audio id="2379_p_w_52_2218_a_n" src="wav/2379_p_w_52_2218_a_n.wav" type="audio/wav"></audio>
+<a><img src="fig/p_w.png" width="16" height="16" onclick="play('2379_p_w_52_2218_a_n')" alt="audio of 2379_p_w_52_2218_a_n" style="position:absolute; left:369px; top:275px; z-index:24;"></a>
+<audio id="1802_p_w_62_1454_a_n" src="wav/1802_p_w_62_1454_a_n.wav" type="audio/wav"></audio>
+<a><img src="fig/p_w.png" width="16" height="16" onclick="play('1802_p_w_62_1454_a_n')" alt="audio of 1802_p_w_62_1454_a_n" style="position:absolute; left:186px; top:327px; z-index:25;"></a>
+<audio id="2553_p_m_65_2419_a_n" src="wav/2553_p_m_65_2419_a_n.wav" type="audio/wav"></audio>
+<a><img src="fig/p_m.png" width="16" height="26" onclick="play('2553_p_m_65_2419_a_n')" alt="audio of 2553_p_m_65_2419_a_n" style="position:absolute; left:452px; top:394px; z-index:26;"></a>
+<audio id="2657_p_w_66_2523_a_n" src="wav/2657_p_w_66_2523_a_n.wav" type="audio/wav"></audio>
+<a><img src="fig/p_w.png" width="16" height="16" onclick="play('2657_p_w_66_2523_a_n')" alt="audio of 2657_p_w_66_2523_a_n" style="position:absolute; left:618px; top:331px; z-index:27;"></a>
+<audio id="1017_n_w_25_1536_a_n" src="wav/1017_n_w_25_1536_a_n.wav" type="audio/wav"></audio>
+<a><img src="fig/n_w.png" width="16" height="16" onclick="play('1017_n_w_25_1536_a_n')" alt="audio of 1017_n_w_25_1536_a_n" style="position:absolute; left:264px; top:218px; z-index:28;"></a>
+<audio id="1826_p_m_77_1478_a_n" src="wav/1826_p_m_77_1478_a_n.wav" type="audio/wav"></audio>
+<a><img src="fig/p_m.png" width="16" height="26" onclick="play('1826_p_m_77_1478_a_n')" alt="audio of 1826_p_m_77_1478_a_n" style="position:absolute; left:580px; top:292px; z-index:29;"></a>
+<audio id="2000_p_m_57_1749_a_n" src="wav/2000_p_m_57_1749_a_n.wav" type="audio/wav"></audio>
+<a><img src="fig/p_m.png" width="16" height="26" onclick="play('2000_p_m_57_1749_a_n')" alt="audio of 2000_p_m_57_1749_a_n" style="position:absolute; left:570px; top:269px; z-index:30;"></a>
+<audio id="1021_n_w_25_1540_a_n" src="wav/1021_n_w_25_1540_a_n.wav" type="audio/wav"></audio>
+<a><img src="fig/n_w.png" width="16" height="16" onclick="play('1021_n_w_25_1540_a_n')" alt="audio of 1021_n_w_25_1540_a_n" style="position:absolute; left:174px; top:311px; z-index:31;"></a>
+<audio id="2679_p_w_66_2545_a_n" src="wav/2679_p_w_66_2545_a_n.wav" type="audio/wav"></audio>
+<a><img src="fig/p_w.png" width="16" height="16" onclick="play('2679_p_w_66_2545_a_n')" alt="audio of 2679_p_w_66_2545_a_n" style="position:absolute; left:524px; top:433px; z-index:32;"></a>
+<audio id="1446_p_m_69_2362_a_n" src="wav/1446_p_m_69_2362_a_n.wav" type="audio/wav"></audio>
+<a><img src="fig/p_m.png" width="16" height="26" onclick="play('1446_p_m_69_2362_a_n')" alt="audio of 1446_p_m_69_2362_a_n" style="position:absolute; left:613px; top:282px; z-index:33;"></a>
+<audio id="2644_p_w_39_2510_a_n" src="wav/2644_p_w_39_2510_a_n.wav" type="audio/wav"></audio>
+<a><img src="fig/p_w.png" width="16" height="16" onclick="play('2644_p_w_39_2510_a_n')" alt="audio of 2644_p_w_39_2510_a_n" style="position:absolute; left:431px; top:304px; z-index:34;"></a>
+<audio id="812_n_m_28_1011_a_n" src="wav/812_n_m_28_1011_a_n.wav" type="audio/wav"></audio>
+<a><img src="fig/n_m.png" width="16" height="26" onclick="play('812_n_m_28_1011_a_n')" alt="audio of 812_n_m_28_1011_a_n" style="position:absolute; left:456px; top:536px; z-index:35;"></a>
+<audio id="784_n_m_34_987_a_n" src="wav/784_n_m_34_987_a_n.wav" type="audio/wav"></audio>
+<a><img src="fig/n_m.png" width="16" height="26" onclick="play('784_n_m_34_987_a_n')" alt="audio of 784_n_m_34_987_a_n" style="position:absolute; left:421px; top:455px; z-index:36;"></a>
+<audio id="936_n_w_19_1207_a_n" src="wav/936_n_w_19_1207_a_n.wav" type="audio/wav"></audio>
+<a><img src="fig/n_w.png" width="16" height="16" onclick="play('936_n_w_19_1207_a_n')" alt="audio of 936_n_w_19_1207_a_n" style="position:absolute; left:489px; top:332px; z-index:37;"></a>
+<audio id="795_n_m_28_995_a_n" src="wav/795_n_m_28_995_a_n.wav" type="audio/wav"></audio>
+<a><img src="fig/n_m.png" width="16" height="26" onclick="play('795_n_m_28_995_a_n')" alt="audio of 795_n_m_28_995_a_n" style="position:absolute; left:467px; top:456px; z-index:38;"></a>
+<audio id="73_p_w_73_148_a_n" src="wav/73_p_w_73_148_a_n.wav" type="audio/wav"></audio>
+<a><img src="fig/p_w.png" width="16" height="16" onclick="play('73_p_w_73_148_a_n')" alt="audio of 73_p_w_73_148_a_n" style="position:absolute; left:185px; top:291px; z-index:39;"></a>
+<audio id="2222_p_w_52_2014_a_n" src="wav/2222_p_w_52_2014_a_n.wav" type="audio/wav"></audio>
+<a><img src="fig/p_w.png" width="16" height="16" onclick="play('2222_p_w_52_2014_a_n')" alt="audio of 2222_p_w_52_2014_a_n" style="position:absolute; left:382px; top:320px; z-index:40;"></a>
+<audio id="2694_p_w_71_2560_a_n" src="wav/2694_p_w_71_2560_a_n.wav" type="audio/wav"></audio>
+<a><img src="fig/p_w.png" width="16" height="16" onclick="play('2694_p_w_71_2560_a_n')" alt="audio of 2694_p_w_71_2560_a_n" style="position:absolute; left:610px; top:332px; z-index:41;"></a>
+<audio id="2276_p_w_38_2085_a_n" src="wav/2276_p_w_38_2085_a_n.wav" type="audio/wav"></audio>
+<a><img src="fig/p_w.png" width="16" height="16" onclick="play('2276_p_w_38_2085_a_n')" alt="audio of 2276_p_w_38_2085_a_n" style="position:absolute; left:204px; top:367px; z-index:42;"></a>
+<audio id="1627_p_w_54_1240_a_n" src="wav/1627_p_w_54_1240_a_n.wav" type="audio/wav"></audio>
+<a><img src="fig/p_w.png" width="16" height="16" onclick="play('1627_p_w_54_1240_a_n')" alt="audio of 1627_p_w_54_1240_a_n" style="position:absolute; left:237px; top:355px; z-index:43;"></a>
+<audio id="2012_p_m_68_1747_a_n" src="wav/2012_p_m_68_1747_a_n.wav" type="audio/wav"></audio>
+<a><img src="fig/p_m.png" width="16" height="26" onclick="play('2012_p_m_68_1747_a_n')" alt="audio of 2012_p_m_68_1747_a_n" style="position:absolute; left:534px; top:527px; z-index:44;"></a>
+<audio id="22_n_w_20_21_a_n" src="wav/22_n_w_20_21_a_n.wav" type="audio/wav"></audio>
+<a><img src="fig/n_w.png" width="16" height="16" onclick="play('22_n_w_20_21_a_n')" alt="audio of 22_n_w_20_21_a_n" style="position:absolute; left:230px; top:365px; z-index:45;"></a>
+<audio id="996_n_w_20_1513_a_n" src="wav/996_n_w_20_1513_a_n.wav" type="audio/wav"></audio>
+<a><img src="fig/n_w.png" width="16" height="16" onclick="play('996_n_w_20_1513_a_n')" alt="audio of 996_n_w_20_1513_a_n" style="position:absolute; left:218px; top:312px; z-index:46;"></a>
+<audio id="1442_p_m_29_830_a_n" src="wav/1442_p_m_29_830_a_n.wav" type="audio/wav"></audio>
+<a><img src="fig/p_m.png" width="16" height="26" onclick="play('1442_p_m_29_830_a_n')" alt="audio of 1442_p_m_29_830_a_n" style="position:absolute; left:447px; top:548px; z-index:47;"></a>
+<audio id="2691_p_m_52_2555_a_n" src="wav/2691_p_m_52_2555_a_n.wav" type="audio/wav"></audio>
+<a><img src="fig/p_m.png" width="16" height="26" onclick="play('2691_p_m_52_2555_a_n')" alt="audio of 2691_p_m_52_2555_a_n" style="position:absolute; left:520px; top:287px; z-index:48;"></a>
+<audio id="618_n_m_21_690_a_n" src="wav/618_n_m_21_690_a_n.wav" type="audio/wav"></audio>
+<a><img src="fig/n_m.png" width="16" height="26" onclick="play('618_n_m_21_690_a_n')" alt="audio of 618_n_m_21_690_a_n" style="position:absolute; left:374px; top:336px; z-index:49;"></a>
+<audio id="1055_n_w_20_1740_a_n" src="wav/1055_n_w_20_1740_a_n.wav" type="audio/wav"></audio>
+<a><img src="fig/n_w.png" width="16" height="16" onclick="play('1055_n_w_20_1740_a_n')" alt="audio of 1055_n_w_20_1740_a_n" style="position:absolute; left:195px; top:341px; z-index:50;"></a>
+<audio id="2432_p_w_52_2298_a_n" src="wav/2432_p_w_52_2298_a_n.wav" type="audio/wav"></audio>
+<a><img src="fig/p_w.png" width="16" height="16" onclick="play('2432_p_w_52_2298_a_n')" alt="audio of 2432_p_w_52_2298_a_n" style="position:absolute; left:459px; top:293px; z-index:51;"></a>
+<audio id="2103_p_w_57_1836_a_n" src="wav/2103_p_w_57_1836_a_n.wav" type="audio/wav"></audio>
+<a><img src="fig/p_w.png" width="16" height="16" onclick="play('2103_p_w_57_1836_a_n')" alt="audio of 2103_p_w_57_1836_a_n" style="position:absolute; left:598px; top:246px; z-index:52;"></a>
+<audio id="1726_p_w_22_1378_a_n" src="wav/1726_p_w_22_1378_a_n.wav" type="audio/wav"></audio>
+<a><img src="fig/p_w.png" width="16" height="16" onclick="play('1726_p_w_22_1378_a_n')" alt="audio of 1726_p_w_22_1378_a_n" style="position:absolute; left:227px; top:438px; z-index:53;"></a>
+<audio id="2579_p_w_53_2445_a_n" src="wav/2579_p_w_53_2445_a_n.wav" type="audio/wav"></audio>
+<a><img src="fig/p_w.png" width="16" height="16" onclick="play('2579_p_w_53_2445_a_n')" alt="audio of 2579_p_w_53_2445_a_n" style="position:absolute; left:307px; top:311px; z-index:54;"></a>
+<audio id="2086_p_w_26_1822_a_n" src="wav/2086_p_w_26_1822_a_n.wav" type="audio/wav"></audio>
+<a><img src="fig/p_w.png" width="16" height="16" onclick="play('2086_p_w_26_1822_a_n')" alt="audio of 2086_p_w_26_1822_a_n" style="position:absolute; left:371px; top:359px; z-index:55;"></a>
+<audio id="1071_n_w_20_1838_a_n" src="wav/1071_n_w_20_1838_a_n.wav" type="audio/wav"></audio>
+<a><img src="fig/n_w.png" width="16" height="16" onclick="play('1071_n_w_20_1838_a_n')" alt="audio of 1071_n_w_20_1838_a_n" style="position:absolute; left:165px; top:335px; z-index:56;"></a>
+<audio id="878_n_w_37_1105_a_n" src="wav/878_n_w_37_1105_a_n.wav" type="audio/wav"></audio>
+<a><img src="fig/n_w.png" width="16" height="16" onclick="play('878_n_w_37_1105_a_n')" alt="audio of 878_n_w_37_1105_a_n" style="position:absolute; left:214px; top:346px; z-index:57;"></a>
+<audio id="1174_n_m_22_2202_a_n" src="wav/1174_n_m_22_2202_a_n.wav" type="audio/wav"></audio>
+<a><img src="fig/n_m.png" width="16" height="26" onclick="play('1174_n_m_22_2202_a_n')" alt="audio of 1174_n_m_22_2202_a_n" style="position:absolute; left:469px; top:534px; z-index:58;"></a>
+<audio id="2067_p_w_57_1802_a_n" src="wav/2067_p_w_57_1802_a_n.wav" type="audio/wav"></audio>
+<a><img src="fig/p_w.png" width="16" height="16" onclick="play('2067_p_w_57_1802_a_n')" alt="audio of 2067_p_w_57_1802_a_n" style="position:absolute; left:472px; top:346px; z-index:59;"></a>
+<audio id="2098_p_w_55_1831_a_n" src="wav/2098_p_w_55_1831_a_n.wav" type="audio/wav"></audio>
+<a><img src="fig/p_w.png" width="16" height="16" onclick="play('2098_p_w_55_1831_a_n')" alt="audio of 2098_p_w_55_1831_a_n" style="position:absolute; left:330px; top:254px; z-index:60;"></a>
+<audio id="1014_n_w_21_1533_a_n" src="wav/1014_n_w_21_1533_a_n.wav" type="audio/wav"></audio>
+<a><img src="fig/n_w.png" width="16" height="16" onclick="play('1014_n_w_21_1533_a_n')" alt="audio of 1014_n_w_21_1533_a_n" style="position:absolute; left:303px; top:424px; z-index:61;"></a>
+<audio id="814_n_m_44_1013_a_n" src="wav/814_n_m_44_1013_a_n.wav" type="audio/wav"></audio>
+<a><img src="fig/n_m.png" width="16" height="26" onclick="play('814_n_m_44_1013_a_n')" alt="audio of 814_n_m_44_1013_a_n" style="position:absolute; left:404px; top:495px; z-index:62;"></a>
+<audio id="1313_p_m_47_128_a_n" src="wav/1313_p_m_47_128_a_n.wav" type="audio/wav"></audio>
+<a><img src="fig/p_m.png" width="16" height="26" onclick="play('1313_p_m_47_128_a_n')" alt="audio of 1313_p_m_47_128_a_n" style="position:absolute; left:571px; top:309px; z-index:63;"></a>
+<audio id="710_n_m_19_806_a_n" src="wav/710_n_m_19_806_a_n.wav" type="audio/wav"></audio>
+<a><img src="fig/n_m.png" width="16" height="26" onclick="play('710_n_m_19_806_a_n')" alt="audio of 710_n_m_19_806_a_n" style="position:absolute; left:225px; top:362px; z-index:64;"></a>
+<audio id="2595_p_m_37_2461_a_n" src="wav/2595_p_m_37_2461_a_n.wav" type="audio/wav"></audio>
+<a><img src="fig/p_m.png" width="16" height="26" onclick="play('2595_p_m_37_2461_a_n')" alt="audio of 2595_p_m_37_2461_a_n" style="position:absolute; left:569px; top:488px; z-index:65;"></a>
+<audio id="1482_p_w_43_888_a_n" src="wav/1482_p_w_43_888_a_n.wav" type="audio/wav"></audio>
+<a><img src="fig/p_w.png" width="16" height="16" onclick="play('1482_p_w_43_888_a_n')" alt="audio of 1482_p_w_43_888_a_n" style="position:absolute; left:326px; top:285px; z-index:66;"></a>
+<audio id="2484_p_w_34_2350_a_n" src="wav/2484_p_w_34_2350_a_n.wav" type="audio/wav"></audio>
+<a><img src="fig/p_w.png" width="16" height="16" onclick="play('2484_p_w_34_2350_a_n')" alt="audio of 2484_p_w_34_2350_a_n" style="position:absolute; left:326px; top:293px; z-index:67;"></a>
+<audio id="1469_p_m_54_1771_a_n" src="wav/1469_p_m_54_1771_a_n.wav" type="audio/wav"></audio>
+<a><img src="fig/p_m.png" width="16" height="26" onclick="play('1469_p_m_54_1771_a_n')" alt="audio of 1469_p_m_54_1771_a_n" style="position:absolute; left:572px; top:247px; z-index:68;"></a>
+<audio id="789_n_m_40_991_a_n" src="wav/789_n_m_40_991_a_n.wav" type="audio/wav"></audio>
+<a><img src="fig/n_m.png" width="16" height="26" onclick="play('789_n_m_40_991_a_n')" alt="audio of 789_n_m_40_991_a_n" style="position:absolute; left:474px; top:379px; z-index:69;"></a>
+<audio id="2056_p_w_29_1792_a_n" src="wav/2056_p_w_29_1792_a_n.wav" type="audio/wav"></audio>
+<a><img src="fig/p_w.png" width="16" height="16" onclick="play('2056_p_w_29_1792_a_n')" alt="audio of 2056_p_w_29_1792_a_n" style="position:absolute; left:363px; top:445px; z-index:70;"></a>
+<audio id="1743_p_w_26_1395_a_n" src="wav/1743_p_w_26_1395_a_n.wav" type="audio/wav"></audio>
+<a><img src="fig/p_w.png" width="16" height="16" onclick="play('1743_p_w_26_1395_a_n')" alt="audio of 1743_p_w_26_1395_a_n" style="position:absolute; left:165px; top:322px; z-index:71;"></a>
+<audio id="1489_p_m_73_894_a_n" src="wav/1489_p_m_73_894_a_n.wav" type="audio/wav"></audio>
+<a><img src="fig/p_m.png" width="16" height="26" onclick="play('1489_p_m_73_894_a_n')" alt="audio of 1489_p_m_73_894_a_n" style="position:absolute; left:450px; top:469px; z-index:72;"></a>
+<audio id="2386_p_w_50_2225_a_n" src="wav/2386_p_w_50_2225_a_n.wav" type="audio/wav"></audio>
+<a><img src="fig/p_w.png" width="16" height="16" onclick="play('2386_p_w_50_2225_a_n')" alt="audio of 2386_p_w_50_2225_a_n" style="position:absolute; left:488px; top:461px; z-index:73;"></a>
+<audio id="2550_p_m_63_2417_a_n" src="wav/2550_p_m_63_2417_a_n.wav" type="audio/wav"></audio>
+<a><img src="fig/p_m.png" width="16" height="26" onclick="play('2550_p_m_63_2417_a_n')" alt="audio of 2550_p_m_63_2417_a_n" style="position:absolute; left:424px; top:470px; z-index:74;"></a>
+<audio id="2124_p_w_52_1900_a_n" src="wav/2124_p_w_52_1900_a_n.wav" type="audio/wav"></audio>
+<a><img src="fig/p_w.png" width="16" height="16" onclick="play('2124_p_w_52_1900_a_n')" alt="audio of 2124_p_w_52_1900_a_n" style="position:absolute; left:502px; top:308px; z-index:75;"></a>
+<audio id="1984_p_w_51_1685_a_n" src="wav/1984_p_w_51_1685_a_n.wav" type="audio/wav"></audio>
+<a><img src="fig/p_w.png" width="16" height="16" onclick="play('1984_p_w_51_1685_a_n')" alt="audio of 1984_p_w_51_1685_a_n" style="position:absolute; left:302px; top:335px; z-index:76;"></a>
+<audio id="902_n_m_20_1140_a_n" src="wav/902_n_m_20_1140_a_n.wav" type="audio/wav"></audio>
+<a><img src="fig/n_m.png" width="16" height="26" onclick="play('902_n_m_20_1140_a_n')" alt="audio of 902_n_m_20_1140_a_n" style="position:absolute; left:466px; top:478px; z-index:77;"></a>
+<audio id="2091_p_w_57_1835_a_n" src="wav/2091_p_w_57_1835_a_n.wav" type="audio/wav"></audio>
+<a><img src="fig/p_w.png" width="16" height="16" onclick="play('2091_p_w_57_1835_a_n')" alt="audio of 2091_p_w_57_1835_a_n" style="position:absolute; left:575px; top:309px; z-index:78;"></a>
+<audio id="1047_n_m_24_1706_a_n" src="wav/1047_n_m_24_1706_a_n.wav" type="audio/wav"></audio>
+<a><img src="fig/n_m.png" width="16" height="26" onclick="play('1047_n_m_24_1706_a_n')" alt="audio of 1047_n_m_24_1706_a_n" style="position:absolute; left:495px; top:500px; z-index:79;"></a>
+<audio id="2482_p_m_44_2348_a_n" src="wav/2482_p_m_44_2348_a_n.wav" type="audio/wav"></audio>
+<a><img src="fig/p_m.png" width="16" height="26" onclick="play('2482_p_m_44_2348_a_n')" alt="audio of 2482_p_m_44_2348_a_n" style="position:absolute; left:442px; top:465px; z-index:80;"></a>
+<audio id="2400_p_m_51_2239_a_n" src="wav/2400_p_m_51_2239_a_n.wav" type="audio/wav"></audio>
+<a><img src="fig/p_m.png" width="16" height="26" onclick="play('2400_p_m_51_2239_a_n')" alt="audio of 2400_p_m_51_2239_a_n" style="position:absolute; left:498px; top:381px; z-index:81;"></a>
+<audio id="125_n_w_22_115_a_n" src="wav/125_n_w_22_115_a_n.wav" type="audio/wav"></audio>
+<a><img src="fig/n_w.png" width="16" height="16" onclick="play('125_n_w_22_115_a_n')" alt="audio of 125_n_w_22_115_a_n" style="position:absolute; left:215px; top:284px; z-index:82;"></a>
+<audio id="628_n_w_22_703_a_n" src="wav/628_n_w_22_703_a_n.wav" type="audio/wav"></audio>
+<a><img src="fig/n_w.png" width="16" height="16" onclick="play('628_n_w_22_703_a_n')" alt="audio of 628_n_w_22_703_a_n" style="position:absolute; left:192px; top:404px; z-index:83;"></a>
+<audio id="2353_p_m_33_2156_a_n" src="wav/2353_p_m_33_2156_a_n.wav" type="audio/wav"></audio>
+<a><img src="fig/p_m.png" width="16" height="26" onclick="play('2353_p_m_33_2156_a_n')" alt="audio of 2353_p_m_33_2156_a_n" style="position:absolute; left:546px; top:408px; z-index:84;"></a>
+<audio id="2233_p_w_71_2024_a_n" src="wav/2233_p_w_71_2024_a_n.wav" type="audio/wav"></audio>
+<a><img src="fig/p_w.png" width="16" height="16" onclick="play('2233_p_w_71_2024_a_n')" alt="audio of 2233_p_w_71_2024_a_n" style="position:absolute; left:626px; top:339px; z-index:85;"></a>
+<audio id="1639_p_w_43_1253_a_n" src="wav/1639_p_w_43_1253_a_n.wav" type="audio/wav"></audio>
+<a><img src="fig/p_w.png" width="16" height="16" onclick="play('1639_p_w_43_1253_a_n')" alt="audio of 1639_p_w_43_1253_a_n" style="position:absolute; left:559px; top:367px; z-index:86;"></a>
+<audio id="1352_p_w_23_367_a_n" src="wav/1352_p_w_23_367_a_n.wav" type="audio/wav"></audio>
+<a><img src="fig/p_w.png" width="16" height="16" onclick="play('1352_p_w_23_367_a_n')" alt="audio of 1352_p_w_23_367_a_n" style="position:absolute; left:342px; top:348px; z-index:87;"></a>
+<audio id="1447_p_w_50_848_a_n" src="wav/1447_p_w_50_848_a_n.wav" type="audio/wav"></audio>
+<a><img src="fig/p_w.png" width="16" height="16" onclick="play('1447_p_w_50_848_a_n')" alt="audio of 1447_p_w_50_848_a_n" style="position:absolute; left:550px; top:299px; z-index:88;"></a>
+<audio id="905_n_m_21_1142_a_n" src="wav/905_n_m_21_1142_a_n.wav" type="audio/wav"></audio>
+<a><img src="fig/n_m.png" width="16" height="26" onclick="play('905_n_m_21_1142_a_n')" alt="audio of 905_n_m_21_1142_a_n" style="position:absolute; left:522px; top:543px; z-index:89;"></a>
+<audio id="1867_p_m_45_1560_a_n" src="wav/1867_p_m_45_1560_a_n.wav" type="audio/wav"></audio>
+<a><img src="fig/p_m.png" width="16" height="26" onclick="play('1867_p_m_45_1560_a_n')" alt="audio of 1867_p_m_45_1560_a_n" style="position:absolute; left:570px; top:384px; z-index:90;"></a>
+<audio id="976_n_m_23_1377_a_n" src="wav/976_n_m_23_1377_a_n.wav" type="audio/wav"></audio>
+<a><img src="fig/n_m.png" width="16" height="26" onclick="play('976_n_m_23_1377_a_n')" alt="audio of 976_n_m_23_1377_a_n" style="position:absolute; left:491px; top:486px; z-index:91;"></a>
+<audio id="816_n_m_37_1015_a_n" src="wav/816_n_m_37_1015_a_n.wav" type="audio/wav"></audio>
+<a><img src="fig/n_m.png" width="16" height="26" onclick="play('816_n_m_37_1015_a_n')" alt="audio of 816_n_m_37_1015_a_n" style="position:absolute; left:438px; top:470px; z-index:92;"></a>
+<audio id="2472_p_w_24_2338_a_n" src="wav/2472_p_w_24_2338_a_n.wav" type="audio/wav"></audio>
+<a><img src="fig/p_w.png" width="16" height="16" onclick="play('2472_p_w_24_2338_a_n')" alt="audio of 2472_p_w_24_2338_a_n" style="position:absolute; left:240px; top:348px; z-index:93;"></a>
+<audio id="2500_p_m_49_2365_a_n" src="wav/2500_p_m_49_2365_a_n.wav" type="audio/wav"></audio>
+<a><img src="fig/p_m.png" width="16" height="26" onclick="play('2500_p_m_49_2365_a_n')" alt="audio of 2500_p_m_49_2365_a_n" style="position:absolute; left:468px; top:311px; z-index:94;"></a>
+<audio id="1105_n_w_20_1880_a_n" src="wav/1105_n_w_20_1880_a_n.wav" type="audio/wav"></audio>
+<a><img src="fig/n_w.png" width="16" height="16" onclick="play('1105_n_w_20_1880_a_n')" alt="audio of 1105_n_w_20_1880_a_n" style="position:absolute; left:516px; top:543px; z-index:95;"></a>
+<audio id="1039_n_w_21_1712_a_n" src="wav/1039_n_w_21_1712_a_n.wav" type="audio/wav"></audio>
+<a><img src="fig/n_w.png" width="16" height="16" onclick="play('1039_n_w_21_1712_a_n')" alt="audio of 1039_n_w_21_1712_a_n" style="position:absolute; left:195px; top:336px; z-index:96;"></a>
+<audio id="1495_p_m_68_918_a_n" src="wav/1495_p_m_68_918_a_n.wav" type="audio/wav"></audio>
+<a><img src="fig/p_m.png" width="16" height="26" onclick="play('1495_p_m_68_918_a_n')" alt="audio of 1495_p_m_68_918_a_n" style="position:absolute; left:617px; top:305px; z-index:97;"></a>
+<audio id="1016_n_w_22_1535_a_n" src="wav/1016_n_w_22_1535_a_n.wav" type="audio/wav"></audio>
+<a><img src="fig/n_w.png" width="16" height="16" onclick="play('1016_n_w_22_1535_a_n')" alt="audio of 1016_n_w_22_1535_a_n" style="position:absolute; left:305px; top:308px; z-index:98;"></a>
+<audio id="1327_p_w_22_149_a_n" src="wav/1327_p_w_22_149_a_n.wav" type="audio/wav"></audio>
+<a><img src="fig/p_w.png" width="16" height="16" onclick="play('1327_p_w_22_149_a_n')" alt="audio of 1327_p_w_22_149_a_n" style="position:absolute; left:182px; top:401px; z-index:99;"></a>
+<audio id="1131_n_w_21_2039_a_n" src="wav/1131_n_w_21_2039_a_n.wav" type="audio/wav"></audio>
+<a><img src="fig/n_w.png" width="16" height="16" onclick="play('1131_n_w_21_2039_a_n')" alt="audio of 1131_n_w_21_2039_a_n" style="position:absolute; left:215px; top:425px; z-index:100;"></a>
+<audio id="1387_p_w_76_612_a_n" src="wav/1387_p_w_76_612_a_n.wav" type="audio/wav"></audio>
+<a><img src="fig/p_w.png" width="16" height="16" onclick="play('1387_p_w_76_612_a_n')" alt="audio of 1387_p_w_76_612_a_n" style="position:absolute; left:261px; top:337px; z-index:101;"></a>
+
+	</div>
+	<div id="introduction" style="left: 950px; position: absolute;">
+		<h1 style="text-align:center">Robust Vocal Quality Feature Embeddings for Dysphonic Voice Detection</h1>
+		<p style="font-size: 20px; text-align: center; font-style: italic;">
+			Jianwei Zhang, Julie Liss, Suren Jayasuriya, and Visar Berisha
+		</p>
+		<h3 style="text-align:center">Supplemental - Interactive UMAP Projection of SVD In-corpus Validation Dataset</h3>
+		<br />
+		<p style="font-size: 18px;">
+		<b>Introduction</b><br />
+			This website provides an interactive version of the SVD in-corpus validation dataset UMAP projection. This material contains the raw audio of some subjects and can be played by clicking the points on the figure. In general, voices located in the top-right corner present with marked dysphonia. Voice samples located on the top-left and bottom-right present with healthy voice quality or mild dysphonia. We indicate two axes on the embeddings distribution: (1) from the bottom-left to the top-right and (2) from the bottom-left to the top-left, which are related to vocal quality and voice pitch respectively. These two axes are also consistent with our training design: (1) a contrastive loss is used to separate dysphonic and healthy voice, and (2) samples either from male or female subjects are selected in one training batch. <b>This result further illustrates the proposed acoustic feature embeddings are sensitive to the vocal quality and voice characteristics.</b>
+		</p>
+		<br /><br />
+		<p style="font-size: 18px;">
+			<b>Usage</b><br />
+			When the mouse pointer hovers over the target point, the icon of that point will be enlarged for easily recognize. Then click the left mouse button to hear the /a/ phonation voice audio corresponding to the target point.
+		</p>
+	</div>
+</body>
+</html>
